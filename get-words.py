@@ -11,7 +11,7 @@ for item in dictionary:
         verbs[morph].append({
             "meaning": item["meaning"],
             "synonym.paradigmatic": [],
-            "synonyms.syntagmatic": []
+            "synonym.syntagmatic": []
         })
 
 json.dump(verbs, open('verbs.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
